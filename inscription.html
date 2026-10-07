@@ -1,15 +1,112 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atlas Dev Days</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>   
+
+<body>
+
 <header>
-    <!-- logo / nom du site -->
+    <p>Atlas Dev Days</p>
 </header>
 
 <nav>
-    <!-- menu -->
-</nav>
+        <img src="assets/icons/menu.png" alt="Ouvrir Le menu">
+   
+        <a href="index.html" class="button">Accueil</a>
+        <a href="programme.html" class="button">Programme</a>
+        <a href="intervenants.html" class="button">Intervenants</a>
+        <a href="inscription.html" class="button">Inscription</a>
+    </nav>
+
 
 <main>
-    <!-- contenu de la page -->
+    <h1>Réservez votre place pour une journée dédiée au développement Web.</h1>
+
+    <form>
+
+<article>
+    <label for="nom">Nom complet</label> <br>
+        <input type="text" id="nom" name="nomComplet" required minlength="3">
+</article> <br>
+
+<article>
+    <label for="email">Email</label> <br>
+        <input type="email" id="email" name="email" required>
+</article> <br>
+
+<article>
+    <label for="tel">Téléphone</label> <br>
+        <input type="tel" id="tel" name="telephone" required pattern="(\+212|0)[5-7][0-9]{8}$">
+</article> <br>
+
+<article>
+    <label for="profil">Profil</label> <br>
+
+    <select id="profil" name="profil" required>
+        <option value="">Choisir</option>
+        <option value="etudiant">Etudiant·e</option>
+        <option value="devloppeur">Développeur·se</option>
+        <option value="autre">Autre</option>
+        
+    </select>
+</article> <br>
+
+<article>
+    
+    <label>Ateliers souhaités:</label> <br>
+    
+    <input type="checkbox" id="atelier1" name="ateliers" value="web">
+    <label for="atelier1">Dévelopement web</label>
+    
+    <input type="checkbox" id="atelier2" name="ateliers" value="JavaScript">
+    <label for="atelier2">JavaScript</label>
+
+    <input type="checkbox" id="atelier3" name="ateliers" value="ia">
+    <label for="atelier3">Intelligence artificielle</label>
+
+</article> <br>
+
+<article>
+<label>Journées(s) de participation:</label> <br>
+
+<input type="radio" id="jour1" name="journee" value="jour1" required>
+<label for="jour1">Jour 1</label>
+
+<input type="radio" id="jour2" name="journee" value="jour2">
+<label for="jour2">Jour 2</label>
+
+<input type="radio" id="lesDeux" name="journee" value="les-deux">
+<label for="lesDeux">les deux</label>
+
+</article> <br>
+
+<article>
+    <label for="message">Message</label> <br>
+    <textarea id="message" name="message"></textarea>
+</article> <br>
+
+<article>
+    <input type="checkbox" id="accord" name="accord" required>
+    <label for="accord">J'accepte les conditions de participation</label>
+</article>
+<br>
+<button type="submit" class="button">S'inscrire</button>
+</form>
+
 </main>
 
 <footer>
-    <!-- footer -->
+     <p>Atlas Dev Days</p>
+
+   <a href="https://www.facebook.com/GitexGlobal/" target="_blank"><img src="assets/icons/Facebook.png" alt="icone de Facebook"></a>
+   <a href="https://ae.linkedin.com/showcase/gitexglobal/?original_referer=" target="_blank"><img src="assets/icons/Linkedin.png" alt="icone de Linkedin"></a> 
+   <a href="https://www.youtube.com/user/GitexTechWeek" target="_blank"><img src="assets/icons/youtube.png" alt="icone de youtube"></a>
+   <a href="https://www.instagram.com/gitex_global/" target="_blank"><img src="assets/icons/Instagram.png" alt="icone de Instagram"></a>
 </footer>
+</body>
+</html>
