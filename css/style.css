@@ -73,6 +73,13 @@ section:first-of-type img {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  
+  /* intervenants */
+}
+.les-noms {
+   text-align: left;
+  white-space: nowrap;
+  white-space: nowrap;
 }
 
 .intervenants-list article {
@@ -83,6 +90,7 @@ section:first-of-type img {
   height: 200px;
   object-fit: cover;
   object-position: center top;
+  
 }
 
 .art {
@@ -197,6 +205,29 @@ p {
 }
 .intervenants {
   text-align: center;
+  /* acceuil */
+}
+.intro-intervenants {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-right: 60px;
+  margin-bottom: 200px;
+}
+
+.photo-intro {
+  object-fit: cover;
+  margin-left: 60px;
+  border-radius: 15px;
+  font-size: 100%;
+  width: 200px;
+  height: 600px;
+  object-fit: cover;
+  object-position: top;
+}
+.intro-texte {
+    width: 50%;
+    text-align: center;
 }
 
 .inscription {
@@ -300,7 +331,18 @@ form label {
   font-size: 15px;
   color: var(--gris);
 }
-form input[type="checkbox"] + label,
-form input[type="radio"] + label {
+ form input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+form input[type="checkbox"] + label {
     display: inline;
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+
+form input[type="checkbox"] + label::after {
+    content: "\A";
+    white-space: pre;
 }
