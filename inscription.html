@@ -24,7 +24,10 @@
 </header>
 
 <main>
-    <h1>Réservez votre place pour une journée dédiée au développement Web.</h1>
+    
+        <h1>Réservez votre place pour une journée dédiée au développement Web.</h1>
+
+    
 
     <form>
 
@@ -88,14 +91,14 @@
 <article>
     <label for="message">Message</label> <br>
     <textarea id="message" name="message"></textarea>
-</article> 
+</article>
 
-<article>
-    <input type="checkbox" id="accord" name="accord" required>
+<article id="accord">
+    <input type="checkbox" name="accord" required>
     <label for="accord">J'accepte les conditions de participation</label>
 </article>
 <br>
-<button type="submit" class="button">S'inscrire</button>
+<button type="submit" id="button-ins" class="button">S'inscrire</button>
 </form>
 
 </main>

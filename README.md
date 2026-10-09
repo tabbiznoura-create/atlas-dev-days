@@ -6,4 +6,4 @@
 
 ![Page d'intervenants](assets/images/screenshots-Inter.png)
 
-![Page d'inscription](assets/images/)
+![Page d'inscription](assets/images/screenshots-ins.png)
