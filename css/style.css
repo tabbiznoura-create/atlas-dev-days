@@ -66,6 +66,21 @@ main > h2 {
  
 }
 
+
+#logo {
+  font-family: Georgia;
+  font-size: 15px;
+
+}
+
+.sous-titre {
+  font-family: georgia;
+  margin-top: -50px;
+}
+
+
+
+
 .cards {
   display: flex;
   justify-content: center;
