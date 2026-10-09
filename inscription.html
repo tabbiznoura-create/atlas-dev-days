@@ -12,17 +12,16 @@
 
 <header>
     <p>Atlas Dev Days</p>
-</header>
+
 
 <nav>
-        <img src="assets/icons/menu.png" alt="Ouvrir Le menu">
    
         <a href="index.html" class="button">Accueil</a>
         <a href="programme.html" class="button">Programme</a>
         <a href="intervenants.html" class="button">Intervenants</a>
         <a href="inscription.html" class="button">Inscription</a>
     </nav>
-
+</header>
 
 <main>
     <h1>Réservez votre place pour une journée dédiée au développement Web.</h1>
@@ -31,23 +30,24 @@
 
 <article>
     <label for="nom">Nom complet</label> <br>
-        <input type="text" id="nom" name="nomComplet" required minlength="3">
+
+        <input type="text" id="nom" class="input2" name="nomComplet" required minlength="3">
 </article> <br>
 
 <article>
     <label for="email">Email</label> <br>
-        <input type="email" id="email" name="email" required>
+        <input type="email" class="input2" id="email" name="email" required>
 </article> <br>
 
 <article>
     <label for="tel">Téléphone</label> <br>
-        <input type="tel" id="tel" name="telephone" required pattern="(\+212|0)[5-7][0-9]{8}$">
+        <input type="tel" id="tel" class="input2" name="telephone" required pattern="(\+212|0)[5-7][0-9]{8}$">
 </article> <br>
 
 <article>
     <label for="profil">Profil</label> <br>
 
-    <select id="profil" name="profil" required>
+    <select id="profil" class="input2" name="profil" required>
         <option value="">Choisir</option>
         <option value="etudiant">Etudiant·e</option>
         <option value="devloppeur">Développeur·se</option>
@@ -103,10 +103,21 @@
 <footer>
      <p>Atlas Dev Days</p>
 
+    <div class="footer-info">
+
+        <a href="mailto:contact@atlasdevdays.ma">contact@atlasdevdays.ma</a>
+       
+        <p>© 2026 Atlas Dev Days — Tous droits réservés.</p>
+    </div>
+
+<div class="social-links">
    <a href="https://www.facebook.com/GitexGlobal/" target="_blank"><img src="assets/icons/Facebook.png" alt="icone de Facebook"></a>
    <a href="https://ae.linkedin.com/showcase/gitexglobal/?original_referer=" target="_blank"><img src="assets/icons/Linkedin.png" alt="icone de Linkedin"></a> 
    <a href="https://www.youtube.com/user/GitexTechWeek" target="_blank"><img src="assets/icons/youtube.png" alt="icone de youtube"></a>
    <a href="https://www.instagram.com/gitex_global/" target="_blank"><img src="assets/icons/Instagram.png" alt="icone de Instagram"></a>
+</div>
+
+
 </footer>
 </body>
 </html>

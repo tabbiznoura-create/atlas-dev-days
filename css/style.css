@@ -1,7 +1,306 @@
+:root {
+  --background: rgba(240, 235, 233, 51%);
+  --bleu: #464e89;
+  --blanc: #ffffff;
+  --gris: #979796;
+  --noir: #000000;
+}
 
-.button{
-    color: white;
-    text-decoration: none;
-    border: 2px solid #464E89 ;
-    background-color: #464E89;
+.button {
+  color: var(--blanc);
+  text-decoration: none;
+  border: 5px solid var(--bleu);
+  background-color: var(--bleu);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Georgia, sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--noir);
+  background-color: var(--background);
+  width: 100%;
+  margin: 0;
+}
+main > h1,
+main > h2 {
+  text-align: center;
+}
+
+.cards + .button {
+  display: block;
+  width: fit-content;
+  margin: 30px auto 50px;
+}
+
+section:first-of-type img {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+.construire > h5 {
+  transform: translateY(-30px);
+}
+
+.cards img {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center top;
+  margin-bottom: 15px;
+}
+.intervenants-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.intervenants-list article {
+  width: calc((100% - 50px) / 3);
+}
+.intervenants-list img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.art {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 15px;
+}
+
+.pic {
+  width: 80%;
+  height: 250px;
+}
+
+.pic > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+  object-position: center;
+}
+.desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+
+.desc > p {
+  font-size: 20px;
+}
+
+.desc > h2 {
+  padding-right: 205px;
+}
+
+p {
+  color: var(--gris);
+}
+
+h1,
+h5 {
+  color: var(--bleu);
+}
+h3,
+h4,
+h2 {
+  color: var(--noir);
+}
+h6 {
+  color: var(--gris);
+}
+
+a {
+  text-decoration: none;
+  color: var(--gris);
+}
+
+header {
+  background-color: var(--blanc);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 40px;
+}
+
+footer {
+  background-color: var(--blanc);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 30px;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+}
+
+.footer-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+main {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.titre {
+  text-align: center;
+  font-size: 40px;
+}
+.futur {
+  text-align: center;
+  font-size: 30px;
+}
+h1,
+h2,
+h3 {
+  margin-bottom: 40px;
+}
+p {
+  margin-bottom: 40px;
+}
+
+.hero {
+  margin-bottom: 40px;
+}
+.intervenants {
+  text-align: center;
+}
+
+.inscription {
+  padding-top: 70px;
+  padding-bottom: 70px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  background: #a5a5a4;
+  background: linear-gradient(
+    90deg,
+    rgba(165, 165, 164, 0.41) 30%,
+    rgba(70, 78, 137, 0.42) 60%
+  );
+}
+.inscription article {
+  width: 50%;
+}
+
+.histoire {
+  text-align: center;
+  width: 80%;
+  margin: 40px auto 0;
+  padding: 30px;
+}
+
+/* Programme */
+.programme1 {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.art2 {
+    display: flex;
+    width: 50%;
+    height: 200px;
+    align-items: center;
+}
+
+.pic2 {
+    width: 100px;
+    height: 150px;
+}
+
+.pic2 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin-left: 50px;
+
+}
+
+.desc2 {
+    width: 60%;
+    height: 200px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+/* inscription */
+
+main form {
+    width: 20%;
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    text-align:left;
+}
+.input2 {
+  width:250px;
+  height: 35px;
+  padding: 10px;
+  background-color: var(--blanc);
+  border-radius: 5px;
+}
+
+#message{
+   width:250px;
+  height: 80px;
+  border-radius: 5px;
+}
+
+form input focus {
+  outline: 2px solid var(--bleu);
+}
+form label {
+  font-family: georgia;
+  white-space: nowrap;
+  font-size: 20px;
+  display: block;
+
+}
+
+#profil {
+  width:250px;
+  height: 35px;
+  font-size: 15px;
+  color: var(--gris);
+}
+form input[type="checkbox"] + label,
+form input[type="radio"] + label {
+    display: inline;
 }
