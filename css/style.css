@@ -287,7 +287,7 @@ p {
     width: 60%;
     height: 200px;
     padding: 10px;
-    overflow: hidden;
+    
 }
 
 /* inscription */
@@ -317,6 +317,7 @@ main form {
 form input focus {
   outline: 2px solid var(--bleu);
 }
+
 form label {
   font-family: georgia;
   white-space: nowrap;
@@ -331,18 +332,28 @@ form label {
   font-size: 15px;
   color: var(--gris);
 }
- form input[type="checkbox"] {
+ 
+form input[type="checkbox"],
+form input[type="radio"] {
     width: auto;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+form input[type="checkbox"] + label,
+form input[type="radio"] + label {
+    display: inline;
+    margin-bottom: 0;
+}
+#accord {
+    width: auto;
+    display: inline-block;
+    vertical-align: middle;
     margin-right: 5px;
 }
 
-form input[type="checkbox"] + label {
+label[for="accord"] {
     display: inline;
-    margin-bottom: 0;
+    vertical-align: middle;
+    margin: 0;
     white-space: nowrap;
-}
-
-form input[type="checkbox"] + label::after {
-    content: "\A";
-    white-space: pre;
 }
