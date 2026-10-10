@@ -70,8 +70,17 @@ main > h2 {
 #logo {
   font-family: Georgia;
   font-size: 15px;
-
+  transform: translateY(15px);
 }
+#atlas {
+  font-size: 30px;
+}
+
+#titre {
+  padding-top: 130px;
+  font-size: 40px;
+}
+
 
 .sous-titre {
   font-family: georgia;
@@ -131,6 +140,7 @@ main > h2 {
   padding: 15px;
 }
 
+
 .pic {
   width: 80%;
   height: 250px;
@@ -182,11 +192,15 @@ a {
 }
 
 header {
+  position: fixed;
+  width: 100%;
   background-color: var(--blanc);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 30px 40px;
+  padding: 10px 40px;
+  top: 0;
+  
 }
 
 footer {
@@ -408,4 +422,5 @@ main > h1 {
   margin: 30px auto;
   padding-top: 100px;
 }
-@view-transition
+
+

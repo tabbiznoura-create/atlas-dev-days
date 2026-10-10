@@ -4,6 +4,6 @@
 
 ![Page de programme](assets/images/screenshots-progra.png)
 
-![Page d'intervenants](assets/images/screenshots-Inter.png)
+![Page d'intervenants](assets/images/screenshots-inter.png)
 
 ![Page d'inscription](assets/images/screenshots-ins.png)
